@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 20px solid cyan;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  position: relative;
+}
+
+.hand {
+  /* my atempt to make lines with borders didn't work */
+  /* border: 3px solid black; */
+  width: 44%;
+  height: 5px;
+  background-color: black;
+  top: 50%;
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  left: 4%;
+
+  /* top:200px; */
+}
+
+/* This will be the later addition of the clock after working with transformation and rotation a little bit better */
+/* .pointer {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid red;
+  display: block;
+} */
+
+.hour-hand {
+  width: 35%;
+  /* Tried to center the hours hand because after setting it 
+  to 25% it shifted to the left from the center  */
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* top: 50%;
+  bottom: 50%; */
+  left: 13%;
+  /* right: 50%; */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c2e7ff;
+  position: absolute;
+  border-radius: 100%;
+  right: 50%;
+  left: 46%;
+  top: 48%;
+  bottom: 50%;
+}
